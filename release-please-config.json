@@ -1,0 +1,23 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "go",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "README.md",
+          "regex": "id\\(\"xyz.atrius.compositor\"\\) version \"(?<version>.*)\""
+        },
+        {
+          "type": "generic",
+          "path": "README.md",
+          "regex": "id 'xyz.atrius.compositor' version '(?<version>.*)'"
+        },
+        {
+          "type": "gradle-properties",
+          "path": "gradle.properties"
+        }
+      ]
+    }
+  }
+}

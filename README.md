@@ -51,7 +51,7 @@ under the hood. If you attempt to place the plugin in your typical `build.gradle
 ```kotlin
 // settings.gradle.kts
 plugins {
-    id("xyz.atrius.compositor") version "<<version>>"
+    id("xyz.atrius.compositor") version "0.1.0"
 }
 ```
 
@@ -59,7 +59,7 @@ plugins {
 ```groovy
 // settings.gradle
 plugins {
-    id 'xyz.atrius.compositor' version "<<version>>"
+    id 'xyz.atrius.compositor' version '0.1.0'
 }
 ```
 
