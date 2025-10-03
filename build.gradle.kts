@@ -54,8 +54,11 @@ mavenPublishing {
 
     pom {
         val projectWebsite: String by project
+        val projectDescription: String by project
 
         name = rootProject.name
+        description = projectDescription
+        inceptionYear = "2025"
         url = projectWebsite
 
         licenses {
@@ -65,6 +68,7 @@ mavenPublishing {
             license {
                 name = license
                 url = licenseLink
+                distribution = licenseLink
             }
         }
 
