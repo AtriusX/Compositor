@@ -1,3 +1,5 @@
+import com.vanniktech.maven.publish.GradlePlugin
+import com.vanniktech.maven.publish.JavadocJar
 
 plugins {
     `java-gradle-plugin`
@@ -30,7 +32,19 @@ kotlin {
     jvmToolchain(17)
 }
 
+val projectWebsite: String by project
+val license: String by project
+val licenseLink: String by project
+
 mavenPublishing {
+
+    configure(
+        GradlePlugin(
+            javadocJar = JavadocJar.Javadoc(),
+            sourcesJar = true,
+        )
+    )
+
     publishToMavenCentral(automaticRelease = true)
     signAllPublications()
 
@@ -41,10 +55,6 @@ mavenPublishing {
     )
 
     pom {
-        val projectWebsite: String by project
-        val license: String by project
-        val licenseLink: String by project
-
         name = rootProject.name
         url = projectWebsite
 
@@ -52,6 +62,32 @@ mavenPublishing {
             license {
                 name = license
                 url = licenseLink
+            }
+        }
+    }
+}
+
+publishing {
+    // Both plugins should be deployed as a single artifact to ensure they can be setup automatically
+    publications {
+
+        create<MavenPublication>("Compositor") {
+            from(components["java"])
+
+            groupId = group.toString()
+            artifactId = rootProject.name
+            version = property("version") as String
+
+            pom {
+                name = rootProject.name
+                url = projectWebsite
+
+                licenses {
+                    license {
+                        name = license
+                        url = licenseLink
+                    }
+                }
             }
         }
     }
