@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/AtriusX/Compositor/compare/v0.1.0...v0.1.1) (2025-10-03)
+
+
+### Bug Fixes
+
+* Fix release pipeline ([c35f292](https://github.com/AtriusX/Compositor/commit/c35f292ef4b698193fe054a288fbe6fc03c00263))
+* Fix release pipeline ([84e0e27](https://github.com/AtriusX/Compositor/commit/84e0e2749324f30c56ae646cc894960ab34e2226))
+
 ## [0.1.0](https://github.com/AtriusX/Compositor/compare/v0.0.1...v0.1.0) (2025-10-03)
 
 
