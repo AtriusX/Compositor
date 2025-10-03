@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/AtriusX/Compositor/compare/v0.1.1...v0.1.2) (2025-10-03)
+
+
+### Bug Fixes
+
+* Reintroduce plugin deployment ([03cc095](https://github.com/AtriusX/Compositor/commit/03cc0950cc18ed9151a39f7fd14e79e1f8f1293b))
+* Reintroduce plugin deployment ([7a2793c](https://github.com/AtriusX/Compositor/commit/7a2793c2064bd5e3e3c3bb65857406ea5577b357))
+
 ## [0.1.1](https://github.com/AtriusX/Compositor/compare/v0.1.0...v0.1.1) (2025-10-03)
 
 
