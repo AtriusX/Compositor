@@ -48,6 +48,7 @@ To begin using this plugin, you'll need to add the plugin to your `settings.grad
 under the hood. If you attempt to place the plugin in your typical `build.gradle` or `build.gradle.kts` files, it will not work.
 
 ### Kotlin
+<!-- x-release-please-start-version -->
 ```kotlin
 // settings.gradle.kts
 plugins {
@@ -62,6 +63,7 @@ plugins {
     id 'xyz.atrius.compositor' version '0.0.1'
 }
 ```
+<!-- x-release-please-end -->
 
 #### Additional Note
 
