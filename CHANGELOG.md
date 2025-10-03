@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/AtriusX/Compositor/compare/v0.1.3...v0.1.4) (2025-10-03)
+
+
+### Bug Fixes
+
+* Add other missing fields ([d81da4d](https://github.com/AtriusX/Compositor/commit/d81da4d47da90c081c578be600711070f090488c))
+* Add other missing fields ([e49f8b7](https://github.com/AtriusX/Compositor/commit/e49f8b7a10dda6ec64aadab3fd933c9768312bb5))
+
 ## [0.1.3](https://github.com/AtriusX/Compositor/compare/v0.1.2...v0.1.3) (2025-10-03)
 
 
