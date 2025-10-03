@@ -32,9 +32,7 @@ kotlin {
     jvmToolchain(17)
 }
 
-val projectWebsite: String by project
-val license: String by project
-val licenseLink: String by project
+val namespace: String by project
 
 mavenPublishing {
 
@@ -49,20 +47,46 @@ mavenPublishing {
     signAllPublications()
 
     coordinates(
-        groupId = group as String,
-        artifactId = rootProject.name,
+        groupId = namespace,
+        artifactId = rootProject.name.lowercase(),
         version = property("version") as String
     )
 
     pom {
+        val projectWebsite: String by project
+
         name = rootProject.name
         url = projectWebsite
 
         licenses {
+            val license: String by project
+            val licenseLink: String by project
+
             license {
                 name = license
                 url = licenseLink
             }
+        }
+
+        developers {
+            val developerName: String by project
+            val githubProfile: String by project
+
+            developer {
+                id = developerName
+                name = developerName
+                url = githubProfile
+            }
+        }
+
+        scm {
+            val scmUrl: String by project
+            val scmConnection: String by project
+            val scmDeveloperConnection: String by project
+
+            url = scmUrl
+            connection = scmConnection
+            developerConnection = scmDeveloperConnection
         }
     }
 }
@@ -74,21 +98,9 @@ publishing {
         create<MavenPublication>("Compositor") {
             from(components["java"])
 
-            groupId = group.toString()
-            artifactId = rootProject.name
+            groupId = namespace
+            artifactId = rootProject.name.lowercase()
             version = property("version") as String
-
-            pom {
-                name = rootProject.name
-                url = projectWebsite
-
-                licenses {
-                    license {
-                        name = license
-                        url = licenseLink
-                    }
-                }
-            }
         }
     }
 }
