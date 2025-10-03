@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/AtriusX/Compositor/compare/v0.1.2...v0.1.3) (2025-10-03)
+
+
+### Bug Fixes
+
+* Add missing POM data, change namespace ([b0dc28a](https://github.com/AtriusX/Compositor/commit/b0dc28a71b25cc55678a7a2186a545b878cc5f2e))
+* Add missing POM data, change namespace ([f6c40d4](https://github.com/AtriusX/Compositor/commit/f6c40d4707c98ec02ff3fab9913963bc9361a58c))
+
 ## [0.1.2](https://github.com/AtriusX/Compositor/compare/v0.1.1...v0.1.2) (2025-10-03)
 
 
