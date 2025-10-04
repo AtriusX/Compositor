@@ -1,12 +1,12 @@
-package xyz.atrius
+package io.github.atriusx
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.internal.cc.base.logger
-import xyz.atrius.config.CompositesConfig
-import xyz.atrius.util.CompositesUtil
-import xyz.atrius.util.CompositesUtil.getCompositesFile
-import xyz.atrius.util.YamlUtil
+import io.github.atriusx.config.CompositesConfig
+import io.github.atriusx.util.CompositesUtil
+import io.github.atriusx.util.CompositesUtil.getCompositesFile
+import io.github.atriusx.util.YamlUtil
 import java.io.File
 
 /**

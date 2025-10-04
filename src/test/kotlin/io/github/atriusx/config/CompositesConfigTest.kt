@@ -1,4 +1,4 @@
-package xyz.atrius.config
+package io.github.atriusx.config
 
 import com.fasterxml.jackson.core.JacksonException
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator

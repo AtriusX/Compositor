@@ -1,4 +1,4 @@
-package xyz.atrius.util
+package io.github.atriusx.util
 
 import org.gradle.api.Project
 import org.gradle.api.initialization.Settings

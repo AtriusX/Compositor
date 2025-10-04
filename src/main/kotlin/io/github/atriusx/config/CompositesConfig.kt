@@ -1,4 +1,4 @@
-package xyz.atrius.config
+package io.github.atriusx.config
 
 import kotlin.collections.iterator
 

@@ -1,4 +1,4 @@
-package xyz.atrius.util
+package io.github.atriusx.util
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
