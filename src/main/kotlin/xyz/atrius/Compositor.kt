@@ -61,6 +61,6 @@ class Compositor : Plugin<Settings> {
     }
 
     private fun Settings.applyProjectPlugin() = gradle.beforeProject {
-        it.pluginManager.apply("xyz.atrius.compositor-project-auto")
+        it.pluginManager.apply("io.github.atriusx.compositor-project-auto")
     }
 }
