@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8](https://github.com/AtriusX/Compositor/compare/v0.1.7...v0.1.8) (2025-10-04)
+
+
+### Bug Fixes
+
+* Fix project group ([f64d49f](https://github.com/AtriusX/Compositor/commit/f64d49f30d6b950ffa48bf16e5e50d8e6eb6c590))
+* Fix project group ([0028593](https://github.com/AtriusX/Compositor/commit/0028593cb174536d334241ec1a8f4bb07907943a))
+
 ## [0.1.7](https://github.com/AtriusX/Compositor/compare/v0.1.6...v0.1.7) (2025-10-04)
 
 
