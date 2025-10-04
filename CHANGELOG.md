@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.5](https://github.com/AtriusX/Compositor/compare/v0.1.4...v0.1.5) (2025-10-04)
+
+
+### Bug Fixes
+
+* Correct plugin namespace ([965f523](https://github.com/AtriusX/Compositor/commit/965f52393f2aca2c1b5619f179def379bc5b243e))
+* Correct plugin namespace ([15709bb](https://github.com/AtriusX/Compositor/commit/15709bbd4779ef96171ae85873b5318b09f72111))
+
 ## [0.1.4](https://github.com/AtriusX/Compositor/compare/v0.1.3...v0.1.4) (2025-10-03)
 
 
