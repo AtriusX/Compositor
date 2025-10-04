@@ -8,7 +8,7 @@ plugins {
     id("com.vanniktech.maven.publish") version "0.34.0"
 }
 
-group = "xyz.atrius"
+group = "io.github.atriusx"
 
 repositories {
     mavenCentral()
@@ -32,8 +32,6 @@ kotlin {
     jvmToolchain(17)
 }
 
-val namespace: String by project
-
 mavenPublishing {
 
     configure(
@@ -47,7 +45,7 @@ mavenPublishing {
     signAllPublications()
 
     coordinates(
-        groupId = namespace,
+        groupId = group as String,
         artifactId = rootProject.name.lowercase(),
         version = property("version") as String
     )
@@ -102,7 +100,7 @@ gradlePlugin {
         // it into useful dependency/project relations. This will then substitute out the selected dependencies
         // for the local projects provided in the configuration.
         create("Compositor") {
-            id = "$namespace.compositor"
+            id = "$group.compositor"
             implementationClass = "$group.Compositor"
         }
     }
