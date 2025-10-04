@@ -120,14 +120,14 @@ gradlePlugin {
         // it into useful dependency/project relations. This will then substitute out the selected dependencies
         // for the local projects provided in the configuration.
         create("Compositor") {
-            id = "$group.compositor"
+            id = "$namespace.compositor"
             implementationClass = "$group.Compositor"
         }
         // This plugin handles generating the gradle tasks for creating/deleting or enabling/disabling the
         // composites file. It should not be applied manually, and should instead be auto-loaded in via
         // the settings plugin provided above.
         create("Compositor-Project-Auto") {
-            id = "$group.compositor-project-auto"
+            id = "$namespace.compositor-project-auto"
             implementationClass = "$group.CompositorProjectAuto"
         }
     }
