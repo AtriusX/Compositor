@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.7](https://github.com/AtriusX/Compositor/compare/v0.1.6...v0.1.7) (2025-10-04)
+
+
+### Bug Fixes
+
+* Attempt different application ([5fdc76f](https://github.com/AtriusX/Compositor/commit/5fdc76f42ea0c248262bb962d26a55586ce39e33))
+* Attempt different application ([1ce7fea](https://github.com/AtriusX/Compositor/commit/1ce7fea731b260a2e6dad0f0762e88de5fe2132a))
+
 ## [0.1.6](https://github.com/AtriusX/Compositor/compare/v0.1.5...v0.1.6) (2025-10-04)
 
 
