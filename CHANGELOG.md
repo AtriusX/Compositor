@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/AtriusX/Compositor/compare/v0.1.5...v0.1.6) (2025-10-04)
+
+
+### Bug Fixes
+
+* Attempt to use java-gradle-plugin publishing instead of custom one ([62db1fc](https://github.com/AtriusX/Compositor/commit/62db1fc18eb8fea222bb30665bbfc2ad1dd972cf))
+* Attempt to use java-gradle-plugin publishing instead of custom one ([6be6d61](https://github.com/AtriusX/Compositor/commit/6be6d61d6db42e4b98195b928a6109b9fb53dd44))
+
 ## [0.1.5](https://github.com/AtriusX/Compositor/compare/v0.1.4...v0.1.5) (2025-10-04)
 
 
