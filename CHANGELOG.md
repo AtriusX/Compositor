@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.9](https://github.com/AtriusX/Compositor/compare/v0.1.8...v0.1.9) (2025-10-04)
+
+
+### Bug Fixes
+
+* Force release ([6983128](https://github.com/AtriusX/Compositor/commit/6983128a998896aca9a7b13c0affc272574fc179))
+* Force release ([020fa2f](https://github.com/AtriusX/Compositor/commit/020fa2fd217c15024aa4a94ebe60a3a0c624a6c5))
+
 ## [0.1.8](https://github.com/AtriusX/Compositor/compare/v0.1.7...v0.1.8) (2025-10-04)
 
 
