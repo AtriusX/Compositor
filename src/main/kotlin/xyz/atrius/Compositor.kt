@@ -61,6 +61,6 @@ class Compositor : Plugin<Settings> {
     }
 
     private fun Settings.applyProjectPlugin() = gradle.beforeProject {
-        it.rootProject.pluginManager.apply(CompositorProjectAuto::class.java)
+        it.pluginManager.apply(CompositorProjectAuto::class.java)
     }
 }
