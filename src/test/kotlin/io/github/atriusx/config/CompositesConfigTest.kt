@@ -139,5 +139,28 @@ class CompositesConfigTest : DescribeSpec({
                 )
             }
         }
+
+        describe("When importing multiple subprojects") {
+            val content = """
+                |composites:
+                |  foo.bar.baz:
+                |    dependency-a: "../multi:dependency-a"
+                |    dependency-b: "../multi:dependency-b"
+            """.trimMargin()
+            val composites = yaml
+                .readValue(content, CompositesConfig::class.java)
+                .processQualifiers()
+
+            it("Should resolve multiple composites") {
+                composites.size shouldBe 2
+            }
+
+            it("Should resolve the correct mappings") {
+                composites
+                    .shouldContain("foo.bar.baz:dependency-a" to "../multi:dependency-a",)
+                composites
+                    .shouldContain("foo.bar.baz:dependency-b" to "../multi:dependency-b",)
+            }
+        }
     }
 })

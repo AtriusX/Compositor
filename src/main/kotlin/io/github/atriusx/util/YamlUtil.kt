@@ -2,7 +2,7 @@ package io.github.atriusx.util
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
-import org.gradle.internal.cc.base.logger
+import org.slf4j.LoggerFactory
 import java.io.File
 import java.io.IOException
 import kotlin.reflect.KClass
@@ -28,4 +28,7 @@ object YamlUtil {
         logger.debug("Writing provided content to ${file.name}...")
         yaml.writeValue(file, value)
     }
+
+    private val logger = LoggerFactory
+        .getLogger(YamlUtil::class.java)
 }

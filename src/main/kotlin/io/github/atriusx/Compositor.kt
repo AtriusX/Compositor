@@ -3,10 +3,10 @@ package io.github.atriusx
 import org.gradle.api.Plugin
 import org.gradle.api.artifacts.DependencySubstitutions
 import org.gradle.api.initialization.Settings
-import org.gradle.internal.cc.base.logger
 import io.github.atriusx.config.CompositesConfig
 import io.github.atriusx.util.CompositesUtil.getCompositesFile
 import io.github.atriusx.util.YamlUtil
+import org.slf4j.LoggerFactory
 
 /**
  * @author Atrius
@@ -62,5 +62,11 @@ class Compositor : Plugin<Settings> {
 
     private fun Settings.applyProjectPlugin() = gradle.beforeProject {
         it.pluginManager.apply(CompositorProjectAuto::class.java)
+    }
+
+    companion object {
+
+        private val logger = LoggerFactory
+            .getLogger(Compositor::class.java)
     }
 }

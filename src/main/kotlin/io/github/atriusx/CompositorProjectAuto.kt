@@ -2,11 +2,11 @@ package io.github.atriusx
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.internal.cc.base.logger
 import io.github.atriusx.config.CompositesConfig
 import io.github.atriusx.util.CompositesUtil
 import io.github.atriusx.util.CompositesUtil.getCompositesFile
 import io.github.atriusx.util.YamlUtil
+import org.slf4j.LoggerFactory
 import java.io.File
 
 /**
@@ -73,5 +73,11 @@ class CompositorProjectAuto : Plugin<Project> {
             ?: return
         // Save content back to file
         YamlUtil.write(file, composites)
+    }
+
+    companion object {
+
+        private val logger = LoggerFactory
+            .getLogger(CompositorProjectAuto::class.java.name)
     }
 }
