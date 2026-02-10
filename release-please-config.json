@@ -17,6 +17,20 @@
           "type": "generic",
           "path": "gradle.properties"
         }
+      ],
+      "changelog-sections": [
+        {
+          "type": "feat",
+          "section": "Feature Changes"
+        },
+        {
+          "type": "fix",
+          "section": "Bug Fixes"
+        },
+        {
+          "type": "chore",
+          "section": "Miscellaneous Changes"
+        }
       ]
     }
   }
