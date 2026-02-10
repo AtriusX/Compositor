@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.10](https://github.com/AtriusX/Compositor/compare/v0.1.9...v0.1.10) (2026-02-10)
+
+
+### Miscellaneous Changes
+
+* Add changelog sections to release please config ([6163737](https://github.com/AtriusX/Compositor/commit/61637372470ca73cc026da7dbbf9b69f43abb513))
+* Add changelog sections to release please config ([b4cb07c](https://github.com/AtriusX/Compositor/commit/b4cb07c9223970032215686506742c559c2b61c9))
+* Drop Gradle version to 8.5, utilize SLF4J for logging ([a567132](https://github.com/AtriusX/Compositor/commit/a5671322837b7e70d8b2365f094b3a4dc328016d))
+* Drop Gradle version to 8.5, utilize SLF4J for logging ([459b846](https://github.com/AtriusX/Compositor/commit/459b846283a7b8321c0c5634150dca617a6719ff))
+* Force release ([d732798](https://github.com/AtriusX/Compositor/commit/d73279868ec55d0d2884b47db43a3736a5dc93fe))
+* Force release ([1eaa5b5](https://github.com/AtriusX/Compositor/commit/1eaa5b5f00dcb9e7eaf8e87c2def9c8deff2f9a6))
+
 ## [0.1.9](https://github.com/AtriusX/Compositor/compare/v0.1.8...v0.1.9) (2025-10-04)
 
 
