@@ -1,6 +1,6 @@
 # Compositor
 
-Compositor is an experimental Gradle plugin which exists to simplify the process of defining composite builds in gradle.
+Compositor is a Gradle plugin which exists to simplify the process of defining composite builds in gradle.
 The primary goal of this plugin is to function as a development aid.
 
 ## Primary Purpose
@@ -149,9 +149,9 @@ composites:
 In the configuration above, this replaces `some.external.complex:dependency` with the subproject `example` located in
 the `../some/local/project` directory. If no project specifier is provided, it will default to the root project.
 
-**Note:** Due to limitations with Gradle, you can only reference one subproject at a time. I've attempted to find ways around
-this but have so far not had much success. This will likely be a rare edge-case for most, but if you run into this scenario, you
-may need to find a way to test each substitution independently.
+**Note:** Due to limitations with Gradle, you may only be able to substitute one submodule from a multi-module project
+at a time. I've attempted to find ways around this but have so far not had much success. This will likely be a rare 
+edge-case for most, but if you run into this scenario, you may need to find a way to test each substitution independently.
 
 ### Managing Composites
 

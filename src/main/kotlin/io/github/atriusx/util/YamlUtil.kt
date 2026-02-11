@@ -1,5 +1,6 @@
 package io.github.atriusx.util
 
+import com.fasterxml.jackson.core.JacksonException
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import org.slf4j.LoggerFactory
@@ -20,13 +21,15 @@ object YamlUtil {
         logger.debug("Attempting to parse ${file.name} content as YAML...")
         yaml.readValue(file, type.java)
     } catch (e: IOException) {
-        logger.error("Failed to parse file '${file.path}', error: ${e.message}")
+        logger.error("Failed to parse file '${file.path}', received error: ${e.message}")
         null
     }
 
-    fun write(file: File, value: Any) {
+    fun write(file: File, value: Any) = try {
         logger.debug("Writing provided content to ${file.name}...")
         yaml.writeValue(file, value)
+    } catch (e: IOException) {
+        logger.error("Failed to write content to file '${file.path}', received error: ${e.message}")
     }
 
     private val logger = LoggerFactory
