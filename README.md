@@ -52,7 +52,7 @@ under the hood. If you attempt to place the plugin in your typical `build.gradle
 ```kotlin
 // settings.gradle.kts
 plugins {
-    id("xyz.atrius.compositor") version "0.1.10"
+    id("io.github.atriusx.compositor") version "0.1.10"
 }
 ```
 
@@ -60,7 +60,7 @@ plugins {
 ```groovy
 // settings.gradle
 plugins {
-    id 'xyz.atrius.compositor' version '0.1.10'
+    id 'io.github.atriusx.compositor' version '0.1.10'
 }
 ```
 <!-- x-release-please-end -->
@@ -149,6 +149,10 @@ composites:
 In the configuration above, this replaces `some.external.complex:dependency` with the subproject `example` located in
 the `../some/local/project` directory. If no project specifier is provided, it will default to the root project.
 
+**Note:** Due to limitations with Gradle, you can only reference one subproject at a time. I've attempted to find ways around
+this but have so far not had much success. This will likely be a rare edge-case for most, but if you run into this scenario, you
+may need to find a way to test each substitution independently.
+
 ### Managing Composites
 
 Managing composites using this tool can be done in either a global or granular manner. At a granular level, you can
@@ -175,5 +179,3 @@ as something managed and entirely separate from the buildscripts. Orchestrating 
 breeze, and there is no longer the worry of having to manage the configuration of these from a place where they can be
 accidentally committed. Simply generate the composites configuration, provide your composite mappings, and you're good
 to go!
-
-### Supporting The Project
