@@ -49,6 +49,8 @@ class CompositorProjectAuto : Plugin<Project> {
             setEnabled(file, false)
             logger.debug("Disabled ${file.name} configuration.")
         }
+
+        logger.debug("Automatically applied CompositorProjectAuto plugin to project '${target.name}'")
     }
 
     private fun Project.compositorTask(taskName: String, action: () -> Unit) {

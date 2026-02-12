@@ -50,6 +50,8 @@ class Compositor : Plugin<Settings> {
                 logger.debug("Swapped out dependency '$dependency' for project: $path")
             }
         }
+
+        logger.debug("Compositor plugin applied!")
     }
 
     private fun DependencySubstitutions.swap(dependency: String, path: String) {
