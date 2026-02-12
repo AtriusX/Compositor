@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.0](https://github.com/AtriusX/Compositor/compare/v0.1.10...v1.0.0) (2026-02-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* Bump plugin to 1.0.0 ([#31](https://github.com/AtriusX/Compositor/issues/31))
+
+### Miscellaneous Changes
+
+* Bump plugin to 1.0.0 ([#31](https://github.com/AtriusX/Compositor/issues/31)) ([17a288a](https://github.com/AtriusX/Compositor/commit/17a288ad6ca300878fb88ec4900abf3883d46549))
+* Clean up README a bit ([#29](https://github.com/AtriusX/Compositor/issues/29)) ([1c31071](https://github.com/AtriusX/Compositor/commit/1c31071ebde073c26f1c45ecf8460c2f30a7dd1d))
+
 ## [0.1.10](https://github.com/AtriusX/Compositor/compare/v0.1.9...v0.1.10) (2026-02-10)
 
 
